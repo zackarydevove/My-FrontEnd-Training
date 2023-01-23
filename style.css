@@ -1,0 +1,13 @@
+#inc {
+    color: aqua;
+    font-size: 100px;
+}
+
+button {
+    display: flex;
+    color: blueviolet;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
