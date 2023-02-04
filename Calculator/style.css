@@ -2,54 +2,37 @@ body {
     background-color: antiquewhite;
 }
 
-main {
-    display: grid;
-    grid-template-rows: 25% 75%;
-    width: 20%;
+.container {    /* container has only one child, so you can center the calculator */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: beige;
 }
 
-.result {
-    /* display: flexbox; */
-    text-align: end;
-    /* vertical-align: middle; */
-    border: 1px solid black;
-    background-color: red;
-    font-size: 50px;
+.calculator {
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.calculatrice {
-    /* display: flexbox; */
-    flex-direction: row;
-    font-size: 30px;
-    border: 1px solid black;
+.calculator input {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
 }
 
-.calculatrice div {
-    border: 1px solid black;
+.display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
 }
 
-.first_row {
-    display: flexbox;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.first_row div {
-    background-color:lightgray;
-    border-radius: 50%;
-}
-
-.second_row div {
-    background-color:lightgray;
-    border-radius: 50%;
-}
-
-.third_row div {
-    background-color:lightgray;
-    border-radius: 50%;
-}
-
-.fourth_row div {
-    background-color:lightgray;
-    border-radius: 50%;
+.display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
 }
