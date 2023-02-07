@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("background.jpg");
+}
+
+.container {
+    width: 50vh;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input, .button {
+    height: 20px;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+
+.button {
+    width: 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.info.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.info.loading:after {
+    visibility: after;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+}
