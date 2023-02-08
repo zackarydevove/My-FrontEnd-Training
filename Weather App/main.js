@@ -13,12 +13,12 @@ let weather = {
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed);
         document.querySelector(".city").innerText = "Weather in " + name;
-        document.querySelector(".degree").innerText = temp + " °C";
+        document.querySelector(".degree").innerText = Math.round((temp - 273.15)) + " °C";
         document.querySelector(".weather").innerText = description;
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind-speed").innerText = "Wind speed: " + speed + " km/h";
         document.querySelector(".info").classList.remove("loading");
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1920x1080/?" + name + "')"
     },
     search: function () {
         this.fetchWeather(document.querySelector(".input").value);
